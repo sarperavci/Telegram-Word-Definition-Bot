@@ -1,8 +1,6 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler,Filters
-import openai
-import nltk
-from nltk.corpus import wordnet
-import base64,telegram
+import openai,base64,telegram
+
 
 def enc(message):return base64.b64encode(message.encode('ascii')).decode('ascii')
 def dec(key):return base64.b64decode(key.encode('ascii')).decode('ascii')
